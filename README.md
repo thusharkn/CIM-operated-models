@@ -1,2 +1,6 @@
 # CIM-operated-models
-Used CAPSMill software tool
+> Operations performed:
+* Face, side, pocket, and slot Milling
+* Drilling 
+* Engraving 
+Material: `Aluminum`
