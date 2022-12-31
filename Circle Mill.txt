@@ -1,0 +1,17 @@
+%
+O1002(programme number)
+G21 G94(Programming in millimeters,G94 specifies feedrate mm per minute)
+G91 G28 X0 Y0 Z0( Incremental Positioning,Reference point return)
+M06 T01(Tool change)
+M03 S1500(CW spindle rotation)
+G90 G00 X15 Y45(Absolute positioning,Positioning Rapid Transverse)
+G00 Z5
+G01 Z-2 F26(Linear Interpolation, Feed)
+G02 X75 Y45  R30(Circular interpolation clockwise)
+G02 X15 Y45 R30
+G00 Z5
+G00 X0 Y0 Z0
+G91 G28 X0 Y0 Z0
+M05(Spindle Stop)
+M30(programme stop)
+%
